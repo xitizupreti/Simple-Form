@@ -8,13 +8,13 @@ function Time() {
 
 const App = () => {
   var t = Time();
-  const state = useState();
   const [timee /*current value*/, setTime /*Updated value*/] =
     useState(t); /*initial value*/
 
-  const time = () => {
+  const time=()=>{
+      t=Time();
     setTime(t);
-  };
+  }
 
   return (
     <>
