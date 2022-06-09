@@ -1,21 +1,29 @@
-import React,{useState} from 'react';
+import React, { useState } from "react";
 
-const App = () =>{
-    const state= useState();
-const [count /*current value*/ ,setCount /*Updated value*/] = useState(0)/*initial value*/; 
-
-const Inc=()=>{
-setCount(count+1);
+function Time() {
+  var current = new Date();
+  var tim = current.toLocaleTimeString();
+  return tim;
 }
 
-return(
+const App = () => {
+  var t = Time();
+  const state = useState();
+  const [timee /*current value*/, setTime /*Updated value*/] =
+    useState(t); /*initial value*/
+
+  const time = () => {
+    setTime(t);
+  };
+
+  return (
     <>
-    <div>
-    <h1>{count}</h1>
-    <button onClick={Inc} >Click here</button>
-    </div>
+      <div>
+        <h1>{timee}</h1>
+        <button onClick={time}>Get time</button>
+      </div>
     </>
-)
-}
+  );
+};
 
 export default App;
