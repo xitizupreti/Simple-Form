@@ -1,26 +1,17 @@
 import React, { useState } from "react";
 
-function Time() {
-  var current = new Date();
-  var tim = current.toLocaleTimeString();
-  return tim;
-}
-
 const App = () => {
-  var t = Time();
-  const [timee /*current value*/, setTime /*Updated value*/] =
-    useState(t); /*initial value*/
-
-  const time=()=>{
-      t=Time();
-    setTime(t);
+  const [state, setState]=useState();
+  const e=(dis)=>{
+    var val=setState(dis.target.value);
+    return val;
   }
-
   return (
     <>
       <div>
-        <h1>{timee}</h1>
-        <button onClick={time}>Get time</button>
+        <h1>Hello {state}</h1>
+        <input type="text" placeholder="Enter your name" onChange={e}></input>
+        <button>Click Me ❤️</button>
       </div>
     </>
   );
