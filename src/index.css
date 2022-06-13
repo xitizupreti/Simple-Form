@@ -27,6 +27,7 @@ button{
 h1{
     text-transform: capitalize;
     width: auto;
+    text-align: center;
     max-width: 100vh;
     max-height: 200px;
     background-color: aqua;
