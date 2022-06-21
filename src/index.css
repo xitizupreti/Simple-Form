@@ -29,14 +29,21 @@ h1{
     width: auto;
     text-align: center;
     max-width: 100vh;
-    max-height: 200px;
+    max-height: 800px;
     background-color: aqua;
-    border-radius: 20px;
-    padding: 6%;
-    overflow:scroll;
-    font-size: 50px;
+    border-radius: 15px;
+    padding: 2%;
+    font-size: 40px;
     color: rebeccapurple;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rebeccapurple;
+    background-color: aqua;
+    font-size: 20px;
 }
 
 h1::-webkit-scrollbar{
