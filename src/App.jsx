@@ -4,19 +4,18 @@ const App = () => {
   const [fullname, setfullname] = useState({
     fname: "",
     lname: "",
-    email:"",
-    phone:"",
+    email: "",
+    phone: "",
   });
 
   const e = (event) => {
-
-    const{value,name}= event.target;
+    const { value, name } = event.target;
 
     setfullname((preValue) => {
-      return{
+      return {
         ...preValue,
         [name]: value,
-      }
+      };
       // if (name === "fname") {
       //   return {
       //     fname: value,
