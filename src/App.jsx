@@ -67,7 +67,7 @@ const App = () => {
           <p>{fullname.phone}</p>
           <input
             type="text"
-            placeholder="Enter your name"
+            placeholder="Enter your First Name"
             name="fname"
             onChange={e}
             value={fullname.fname}
@@ -75,7 +75,7 @@ const App = () => {
           ></input>
           <input
             type="text"
-            placeholder="Enter your pw"
+            placeholder="Enter your Last Name"
             name="lname"
             onChange={e}
             value={fullname.lname}
